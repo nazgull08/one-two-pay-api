@@ -10,7 +10,8 @@ chrono = "0.4.26"
 clap = { version = "4.3.11", features = ["derive"] }
 log = "0.4.19"
 reqwest = { version = "0.11.18", features = ["json"] }
-schemars = "0.7"
+rocket_okapi = { git = "https://github.com/GREsau/okapi", rev = "ddb07a709129b24ed8e106b0fbf576b6ded615ac"}
+schemars = { version = "0.8.11"}
 serde = { version = "1.0.179", features = ["serde_derive"] }
 serde_json = "1.0.104"
 thiserror = "1.0.31"

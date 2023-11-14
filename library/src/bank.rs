@@ -1,7 +1,7 @@
 use std::fmt::Display;
 
 use clap::ValueEnum;
-use schemars::JsonSchema;
+use rocket_okapi::JsonSchema;
 use serde::{Deserialize, Serialize};
 
 #[derive(
