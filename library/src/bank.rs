@@ -1,8 +1,23 @@
 use std::fmt::Display;
 
 use clap::ValueEnum;
+use schemars::JsonSchema;
+use serde::{Deserialize, Serialize};
 
-#[derive(Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Hash, ValueEnum)]
+#[derive(
+    Debug,
+    Clone,
+    Copy,
+    PartialEq,
+    Eq,
+    PartialOrd,
+    Ord,
+    Hash,
+    Serialize,
+    Deserialize,
+    JsonSchema,
+    ValueEnum,
+)]
 pub enum Bank {
     Bangkok,
     Kasikorn,
